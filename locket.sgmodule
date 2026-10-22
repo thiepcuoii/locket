@@ -1,4 +1,4 @@
-#!name=All In One
+#!name=Locket
 #!desc=Được tổng hợp bởi Tran Van Trung
 #!author=vtrungg
 #!homepage=https://module-ios.netlify.app
@@ -6,7 +6,7 @@
 #!moduleUrl=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/locket.sgmodule
 #!icon=https://module-ios.netlify.app/assets/img/shadowrocket.webp
 #!howtouse=Shadowrocket
-#Shadowrocket Configuration - All IN ONE
+#Shadowrocket Configuration - Locket
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,UDP)),REJECT

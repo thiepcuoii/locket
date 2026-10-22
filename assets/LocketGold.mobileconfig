@@ -6,10 +6,10 @@
     <string>Locket Gold 💛</string>
 
     <key>PayloadDescription</key>
-    <string>Hồ sơ cầu hình VIP chặn thu hồi Locket Gold vĩnh viễn.&#10;@duyvinh09</string>
+    <string>Hồ sơ cầu hình VIP chặn thu hồi Locket Gold vĩnh viễn.&#10;@vtrungg</string>
 
     <key>PayloadIdentifier</key>
-    <string>com.duyvinh09.locketgold.profile</string>
+    <string>com.vtrungg.locketgold.profile</string>
 
     <key>PayloadScope</key>
     <string>System</string>
@@ -24,7 +24,7 @@
     <integer>1</integer>
 
     <key>PayloadOrganization</key>
-    <string>Đinh Duy Vinh</string>
+    <string>Tran Van Trung</string>
 
     <key>PayloadContent</key>
     <array>
@@ -50,7 +50,7 @@
             <string>com.apple.dnsSettings.managed</string>
 
             <key>PayloadIdentifier</key>
-            <string>com.duyvinh09.locketgold.dns</string>
+            <string>com.vtrungg.locketgold.dns</string>
 
             <key>PayloadUUID</key>
             <string>6E7D9C2A-5B41-4F83-9A62-D1E0B7C845AF</string>
@@ -59,7 +59,7 @@
             <string>Locket Gold DNS</string>
 
             <key>PayloadOrganization</key>
-            <string>Đinh Duy Vinh</string>
+            <string>Tran Van Trung</string>
 
             <key>PayloadVersion</key>
             <integer>1</integer>

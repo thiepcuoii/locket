@@ -1,7 +1,7 @@
 // ============================================================
 // Locket Remote Config – Force US Region (REQUEST)
 // Endpoint: firebaseremoteconfig.googleapis.com/.../firebase:fetch
-// Tác giả: @duyvinh09
+// Tác giả: @vtrungg
 // ============================================================
 
 if ($request.method === "POST" && $request.body) {

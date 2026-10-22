@@ -1,9 +1,9 @@
-#!url=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/modules/Locket_duyvinh09.sgmodule
-#!name=Locket-DuyVinh09_Gold
-#!desc=Crack Full By DuyVinh09
+#!url=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/modules/Locket_vtrungg.sgmodule
+#!name=Locket-Vtrungg_Gold
+#!desc=Crack Full By Vtrungg
 
 [Script]
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/js/Locket_DuyVinh09.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/js/Locket_Vtrungg.js, requires-body=true, max-size=-1, timeout=60
 
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/js/deleteHeader.js, timeout=60
 

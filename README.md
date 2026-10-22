@@ -1,22 +1,31 @@
-# Hướng Dẫn Sử Dụng Module IOS với Shadowrocket
+# README – Locket Gold Only
 
-## Bước 1: Tải Ứng Dụng Shadowrocket
-- Truy cập App Store trên iPhone và tìm kiếm ứng dụng **Shadowrocket** để tải về.
-- Nếu không có tài khoản để tải, bạn có thể truy cập vào [link này](https://idapple.csadata4g.me/) để lấy tài khoản và mật khẩu đăng nhập vào App Store. 
-    - **Lưu ý:** Chỉ đăng nhập trong App Store, không đăng nhập trong phần Cài Đặt của máy.
-    - Nếu link bị hỏng, vui lòng liên hệ riêng với **Vinh** để được hỗ trợ.
+---
 
-## Bước 2: Cài Đặt Module
-1. Sao chép link module cần sử dụng:
-    - [Locket Module](https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/modules/Locket_vtrungg.sgmodule)
-    - [All In One Module](https://raw.githubusercontent.com/thiepcuoii/locket/refs/heads/main/All_In_One.sgmodule)
-2. Mở ứng dụng **Shadowrocket**.
-3. Chuyển đến tab **Cấu Hình**.
-4. Nhấn vào dấu **+** (thêm mới).
-5. Dán link module đã sao chép vào, sau đó tải xuống và cài đặt.
+## Cấu trúc thư mục
 
-## Bước 3: Kích Hoạt VPN
-- Sau khi cài đặt module, chuyển sang tab **Nhà**.
-- Bật VPN để kích hoạt và sử dụng module.
+```
+testlk_locket/
+├── js/
+│   ├── Locket_VanTrung.js      ← Script unlock Gold qua RevenueCat (Locket-specific, response)
+│   ├── Locket_Unlocked.js       ← Script unlock Gold + tính năng qua Firebase Remote Config (response)
+│   ├── Locket_rc_us.js          ← Script giả vùng US qua Firebase Remote Config (request) – tuỳ chọn
+│   ├── revenuecat.js            ← Script generic RevenueCat – có mapping 'Locket': ['Gold'] dòng 109
+│   └── deleteHeader.js          ← Script xoá header X-RevenueCat-ETag (request) – dùng chung
+├── modules/
+│   └── Locket_vantrung.sgmodule  ← Module Surge/Shadowrocket chỉ cho Locket
+├── assets/
+│   ├── locket.mobileconfig       ← Hồ sơ DNS (Cloudflare + chặn Sentry/Amplitude/AppsFlyer)
+│   └── LocketGold.mobileconfig   ← Hồ sơ DNS đơn giản (ublockdns) chặn thu hồi Gold
+├── Locket_Only.conf              ← Shadowrocket Configuration chỉ Locket
+├── Locket_Only.sgmodule          ← Shadowrocket Module chỉ Locket
+└── Egern_LocketGold_Only.yaml    ← Egern config chỉ Locket
+```
 
-Chúc bạn thành công!
+## Cách dùng nhanh (Shadowrocket)
+
+1. Cài `.mobileconfig` tương ứng (vào Safari → tải → Cài đặt → Hồ sơ)
+2. Import `Locket_Only.sgmodule` vào Shadowrocket (tab Cấu Hình → Module)
+3. Bật VPN
+
+> **Lưu ý:** Chỉ dùng cho mục đích học tập, không thương mại. Nguồn gốc: @vtrungg

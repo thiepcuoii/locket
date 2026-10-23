@@ -267,7 +267,7 @@ if (ua.includes("Locket")) {
             uid: "midautumn_2026",
             // url: "https://i.ibb.co/vC8b93Ld/ig.png",
             url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
-            // url: "https://i.ibb.co/RTm5P1n9/kitty-1.png",
+            url: "https://i.ibb.co/RTm5P1n9/kitty-1.png",
             // url: "https://i.ibb.co/JjLZ3cvD/khung-ins.png",
             use_local_time_zone: true,
             placement: "below",

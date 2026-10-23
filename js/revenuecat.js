@@ -196,7 +196,6 @@ const mapping = {
   'Wozi': ['wozi_pro_2023']
 };
 
-// ========= Phần logic đã được giải mã ========= //
 
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
 var obj = JSON.parse($response.body);
@@ -208,7 +207,7 @@ var vantrung = {
   ownership_type: "PURCHASED",
   billing_issues_detected_at: null,
   period_type: "normal",
-  expires_date: "2099-01-09T01:04:17Z",
+  expires_date: "2099-07-15T01:04:17Z",
   grace_period_expires_date: null,
   unsubscribe_detected_at: null,
   original_purchase_date: "2026-07-15T01:04:17Z",
@@ -220,7 +219,7 @@ var vtrungg = {
   grace_period_expires_date: null,
   purchase_date: "2026-07-15T01:04:17Z",
   product_identifier: "com.vtrungg.premium",
-  expires_date: "2099-01-09T01:04:17Z"
+  expires_date: "2099-07-15T01:04:17Z"
 };
 
 const match = Object.keys(mapping).find(key => ua.includes(key));
